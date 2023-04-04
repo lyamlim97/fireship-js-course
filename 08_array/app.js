@@ -5,8 +5,8 @@ const zeros = Array(100).fill(0);
 console.log(zeros);
 
 const arr2 = Array(100)
-  .fill(0)
-  .map((_, i) => i);
+    .fill(0)
+    .map((_, i) => i);
 console.log(arr2);
 
 const arr3 = [...Array(100).keys()];
@@ -17,9 +17,9 @@ const unique = new Set(arr);
 const unique1 = [...new Set(arr)];
 
 for (const val of arr) {
-  console.log(val);
+    console.log(val);
 }
 
 for (const [i, val] of arr.entries()) {
-  console.log(i, val);
+    console.log(i, val);
 }

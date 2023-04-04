@@ -3,19 +3,19 @@
 }
 */
 const sayHi = function (message) {
-  return "Said..." + message;
+    return "Said..." + message;
 };
 
 function funWrapper(callback) {
-  callback("Called by wrapper");
+    callback("Called by wrapper");
 }
 
 funWrapper((m) => console.log(m));
 
 function funCreator() {
-  return function (message) {
-    return "Said..." + message;
-  };
+    return function (message) {
+        return "Said..." + message;
+    };
 }
 
 const fn = funCreator();
